@@ -415,12 +415,12 @@ button.st.c:hover{background:#F9D5C7}
   <aside class="story" id="story">
     <div>
       <div class="kicker">The One Fix, as a working prototype</div>
-      <h1>Spread the noon rush<span>across the lunch hour.</span></h1>
+      <h1>Spread the lunch rush<span>across the whole morning.</span></h1>
       <p class="lead">Students order ahead into 15 minute pickup slots. Each slot takes only four advance orders, so the kitchen cooks in small batches and the counter queue keeps moving.</p>
       <div class="base">
-        <div><b class="num">30</b><span>orders served, 12 to 1pm</span></div>
+        <div><b class="num">30</b><span>orders served, 11am to 12pm</span></div>
         <div><b class="num">~8</b><span>students waiting at peak</span></div>
-        <div><b class="num">16 min</b><span>queue wait (Little's Law)</span></div>
+        <div><b class="num">~20 min</b><span>to get food at peak (timed)</span></div>
         <div><b class="num">10</b><span>orders per labour hour</span></div>
       </div>
       <div class="base-note">Baseline from the audit fieldwork at the stall.</div>
@@ -439,7 +439,7 @@ button.st.c:hover{background:#F9D5C7}
       </div>
       <div class="controls">
         <div class="row">
-          <div class="democlock num" id="dclock">10:42am<small>Demo clock</small></div>
+          <div class="democlock num" id="dclock">10:12am<small>Demo clock</small></div>
           <div class="btns">
             <button class="cbtn" id="c-play" aria-pressed="false">Play</button>
             <button class="cbtn" id="c-5">+5 min</button>
@@ -460,7 +460,7 @@ button.st.c:hover{background:#F9D5C7}
   <!-- PHONE -->
   <main class="phone show" id="phone" aria-label="Customer app">
     <div class="screen" id="screen">
-      <div class="statusbar" id="sbar"><span class="num" id="sclock">10:42</span><span class="icons"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="currentColor"/><rect x="5" y="5" width="3" height="7" rx="1" fill="currentColor"/><rect x="10" y="2" width="3" height="10" rx="1" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="1" fill="currentColor"/></svg><svg viewBox="0 0 26 12"><rect x="1" y="1" width="21" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="3" y="3" width="15" height="6" rx="1.5" fill="currentColor"/><rect x="23.5" y="4" width="2" height="4" rx="1" fill="currentColor"/></svg></span></div>
+      <div class="statusbar" id="sbar"><span class="num" id="sclock">10:12</span><span class="icons"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="currentColor"/><rect x="5" y="5" width="3" height="7" rx="1" fill="currentColor"/><rect x="10" y="2" width="3" height="10" rx="1" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="1" fill="currentColor"/></svg><svg viewBox="0 0 26 12"><rect x="1" y="1" width="21" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="3" y="3" width="15" height="6" rx="1.5" fill="currentColor"/><rect x="23.5" y="4" width="2" height="4" rx="1" fill="currentColor"/></svg></span></div>
       <div class="notif" id="notif" role="status" aria-live="polite"><div class="ap" data-leaves="1"></div><div><b>Daun Daun <small>now</small></b><p id="notiftext"></p></div></div>
 
       <div class="views">
@@ -473,12 +473,12 @@ button.st.c:hover{background:#F9D5C7}
                 <div class="word"><span class="lv" data-leaves="3" style="display:flex;gap:1px"></span>Daun Daun</div>
                 <button class="bag" id="bag" aria-label="Your order"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="count" id="bagcount">0</span></button>
               </div>
-              <h1>Skip the<br>noon queue.</h1>
+              <h1>Skip the<br>lunch queue.</h1>
               <p>Order now, pick a 15 minute slot and collect at the side of the counter.</p>
             </div>
           </div>
           <div class="qcompare">
-            <div class="now"><div class="lab">Counter queue now</div><div class="people" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="big num">16 min</div><div class="small">about 8 people waiting</div></div>
+            <div class="now"><div class="lab">Counter wait now</div><div class="people" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="big num">~20 min</div><div class="small">about 8 people waiting</div></div>
             <div class="you"><div class="lab">Order ahead</div><div class="people" aria-hidden="true"></div><div class="big num">0 min</div><div class="small">hot and ready at your slot</div></div>
           </div>
           <div class="early" id="early">
@@ -539,7 +539,7 @@ button.st.c:hover{background:#F9D5C7}
   <!-- KITCHEN -->
   <section class="tablet" id="tablet" aria-label="Kitchen screen">
     <div class="tscreen">
-      <div class="khead"><h2>Kitchen <small>Advance orders</small></h2><div class="clk num" id="kclock">10:42am</div></div>
+      <div class="khead"><h2>Kitchen <small>Advance orders</small></h2><div class="clk num" id="kclock">10:12am</div></div>
       <div class="kbody" id="kbody"></div>
       <div class="kfoot" id="kfoot"></div>
     </div>
@@ -2913,9 +2913,9 @@ const IT={};MENU.forEach(([,a])=>a.forEach(i=>IT[i.id]=i));
 const RM=v=>'RM'+v.toFixed(2);
 
 /* ---------- time + slots ---------- */
-const START=10*60+42, EB_END=11*60;
-const SL=[];for(let t=11*60;t<=13*60+45;t+=15)SL.push(t);
-const CROWD=[2,3,4,6,8,8,7,7,5,3,2,2]; /* illustrative walk in arrivals per 15 min (sums to 30 for 12 to 1pm) */
+const START=10*60+12, EB_END=11*60;
+const SL=[];for(let t=10*60;t<=12*60+45;t+=15)SL.push(t);
+const CROWD=[2,3,4,6,8,8,7,7,5,3,2,2]; /* illustrative walk in arrivals per 15 min (sums to 30 for 11am to 12pm) */
 const level=c=>c>=8?'peak':c>=6?'busy':'calm';
 const LCOL={calm:'#7DB471',busy:'#E4572E',peak:'#7B1E25'};
 const hm=t=>{let h=Math.floor(t/60),m=t%60;return{h,m}};
@@ -2927,7 +2927,7 @@ let S;
 const SEED=[[75,'Roast Chicken on rice','Eat in'],[90,'Sesame Grilled Chicken Rice','Eat in'],[90,'Creamy Chicken Mushroom Spaghetti','Take away'],[105,'Roast Chicken on rice','Fried egg, take away'],[105,'Roast Chicken on spaghetti','Eat in'],[105,'C.C.P. on rice','Eat in'],[120,'Roast Chicken on rice','Extra rice, eat in'],[120,'Crispy Chicken Wrap','Cheese, take away'],[120,'Chicken Bolognese Spaghetti','Eat in'],[120,'Sesame Grilled Chicken Rice','Fried egg, eat in'],[135,'Roast Chicken on rice','Take away'],[135,'Seafood Olio Spaghetti','Spicy, eat in'],[135,'C.C.P. on spaghetti','Eat in'],[135,'Roast Chicken on rice','Salad, eat in'],[150,'Macaroni Goreng Ayam','Eat in'],[150,'Roast Chicken on rice','Take away'],[150,'Creamy Chicken Mushroom Spaghetti','Eat in'],[165,'Chicken Quesadilla','Take away'],[165,'Roast Chicken on spaghetti','Eat in'],[180,'Sesame Grilled Chicken Rice','Eat in']];
 function reset(){
   S={clock:START,cart:[],slot:null,take:false,byo:false,pay:'vcash',mine:null,seq:20,orders:[],batches:{},stack:['menu'],playing:false};
-  SEED.forEach(([off,what,mods])=>S.orders.push({no:'D-0'+(S.seq++),slot:600+off,what,mods,status:'queued',you:false}));
+  SEED.forEach(([off,what,mods])=>S.orders.push({no:'D-0'+(S.seq++),slot:540+off,what,mods,status:'queued',you:false}));
 }
 const booked=t=>S.orders.filter(o=>o.slot===t).length;
 const cookAt=t=>t-8;
@@ -3048,7 +3048,7 @@ function renderSlots(){
       <div class="fact good"><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="#2C6A25" stroke-width="2" stroke-linecap="round"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><span>Your wait at the counter</span><b>none</b></div>
       <div class="fact"><span class="ic"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.5" fill="none" stroke="#2C6A25" stroke-width="1.8"/><circle cx="8" cy="8" r="2" fill="#2C6A25"/></svg></span><span>Advance spots left</span><b class="num">${3-b} of 4 after yours</b></div>
     </div>`}
-  const q=SL.find((t,i)=>booked(t)<4&&t>=S.clock+10&&CROWD[i]<=6&&t<12*60);
+  const q=SL.find((t,i)=>booked(t)<4&&t>=S.clock+10&&CROWD[i]<=6&&t<11*60);
   $('#quiet').innerHTML=q!=null&&q!==S.slot?`<svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 1.5 9.9 6l4.6.4-3.5 3 1.1 4.6L8 11.6 3.9 14l1.1-4.6-3.5-3L6.1 6Z" fill="#F6B819"/></svg><span>Quiet pick: <button data-q="${q}">${range(q)}</button>, before the rush.</span>`:'';
   const qb=$('#quiet [data-q]');if(qb)qb.onclick=()=>{S.slot=+qb.dataset.q;renderSlots();updateCta()};
 }
@@ -3127,8 +3127,8 @@ function renderKitchen(){
   S.orders.forEach(o=>o.fresh=false);
   const ks=$('#k-start');if(ks)ks.onclick=()=>{const os=S.orders.filter(o=>o.slot===next);if(os.every(o=>o.status!=='queued')){os.forEach(o=>{if(o.status!=='ready')setStatus(o,'ready')})}else setBatch(next,'cooking')};
   $$('[data-ready]').forEach(b=>b.onclick=()=>setStatus(S.orders.find(o=>o.no===b.dataset.ready),'ready'));
-  const lunch=S.orders.length,peak=S.orders.filter(o=>o.slot>=12*60&&o.slot<13*60).length;
-  $('#kfoot').innerHTML=`<div><b class="num">${lunch}</b><span>advance orders today</span></div><div><b class="num">${peak}</b><span>in the 12 to 1pm peak</span></div><div><b class="num">${(()=>{const t=SL.find(t=>t>=S.clock+10&&booked(t)<4);return t==null?'None':f12(t)})()}</b><span>next slot with space</span></div>`;
+  const lunch=S.orders.length,peak=S.orders.filter(o=>o.slot>=11*60&&o.slot<12*60).length;
+  $('#kfoot').innerHTML=`<div><b class="num">${lunch}</b><span>advance orders today</span></div><div><b class="num">${peak}</b><span>in the 11am to 12pm peak</span></div><div><b class="num">${(()=>{const t=SL.find(t=>t>=S.clock+10&&booked(t)<4);return t==null?'None':f12(t)})()}</b><span>next slot with space</span></div>`;
 }
 
 /* ---------- clock ---------- */
@@ -3168,7 +3168,7 @@ function drawChart(){
     if(i%2===0)g+=`<text x="${L+i*bw+bw/2}" y="${H-8}" text-anchor="middle" font-size="9" fill="#6A756E">${f12(t,false)}</text>`;
   });
   const pk=sc==='now'?8:6,pi=4;g+=`<text x="${L+pi*bw+bw/2}" y="${y(sc==='now'?8:8)-6}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#18201B">${sc==='now'?'8 at the counter':'6 at the counter'}</text>`;
-  svg.innerHTML=`<desc id="chartdesc">${sc==='now'?'Today: walk in arrivals peak at 8 per 15 minutes around noon.':'With Order Ahead: walk in arrivals peak at 6 per 15 minutes, with advance orders moved earlier.'}</desc>`+g;
+  svg.innerHTML=`<desc id="chartdesc">${sc==='now'?'Today: walk in arrivals peak at 8 per 15 minutes around 11am.':'With Order Ahead: walk in arrivals peak at 6 per 15 minutes, with advance orders moved earlier.'}</desc>`+g;
   const tip=$('#tip'),card=$('#chartcard');
   $$('#chart .bargrp').forEach(gr=>{gr.addEventListener('pointerenter',e=>{const i=+gr.dataset.i;const wk=sc==='now'?NOW[i]:OA_W[i],pr=sc==='now'?0:OA_P[i];tip.innerHTML=`<b>${range(SL[i])}</b><br>Walk in: ${wk}${sc==='oa'?`<br>Order Ahead: ${pr}`:''}`;tip.style.opacity=1});
     gr.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();tip.style.left=Math.min(e.clientX-r.left+12,r.width-120)+'px';tip.style.top=(e.clientY-r.top-50)+'px'});
@@ -3190,7 +3190,7 @@ window.demo={
   slot(){this.cart();S.slot=SL[3];push('slot')},
   pay(){this.slot();push('pay')},
   track(){this.pay();placeOrder()},
-  cooking(){this.track();advance(53);S.orders.filter(o=>o.slot<S.mine.slot).forEach(o=>o.status='ready');setBatch(S.mine.slot,'cooking')},
+  cooking(){this.track();advance(23);S.orders.filter(o=>o.slot<S.mine.slot).forEach(o=>o.status='ready');setBatch(S.mine.slot,'cooking')},
   ready(){this.cooking();setStatus(S.mine,'ready')},
   noAnim(){const st=document.createElement('style');st.textContent='*{transition:none!important;animation:none!important}';document.head.appendChild(st)}
 };
